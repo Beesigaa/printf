@@ -2,7 +2,7 @@
 /**
   *int_2_str - convert int to str
   *@buff: char pointer
-  *@i: integer
+  *@i:Integer
   *Return - return nothing
   */
 void int_2_str(char *buff, int i)
@@ -12,7 +12,7 @@ void int_2_str(char *buff, int i)
 		buff[0] = '0';
 		buff[1] = '\0';
 	}
-	
+
 	int check_sign = (i < 0) ? -1 : 1;
 	int index = 0;
 
@@ -21,7 +21,7 @@ void int_2_str(char *buff, int i)
 		buff[index++] = '0' + check_sign * (i % 10);
 		i /= 10;
 	}
-	
+
 	if (check_sign == -1)
 	{
 		buff[index++] = '-';
@@ -34,6 +34,7 @@ void int_2_str(char *buff, int i)
 	while (first < last)
 	{
 		char c = buff[first];
+
 		buff[first] = buff[last];
 		buff[first] = buff[last];
 		buff[last] = c;

@@ -1,4 +1,11 @@
 #include "main.h"
+/**
+  *doub_2_str - convert double to string
+  *@b: Character string
+  *@n: Double
+  *@deci: Integer
+  *Return - nothing
+  */
 void doub_2_str(char *b, double n, int deci)
 {
 	int i = (int) n;
@@ -13,7 +20,7 @@ void doub_2_str(char *b, double n, int deci)
 
 	*b = '.';
 
-	for(int x = 0; x < deci; x++)
+	for (int x = 0; x < deci; x++)
 	{
 		frac *= 10;
 		int temp = (int) frac;
